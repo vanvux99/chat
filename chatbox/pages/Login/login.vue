@@ -4,14 +4,11 @@
 
 <script>
 import LOGIN from '../../components/Login/login'
-
 export default {
-
+  layout: 'box',
   components: {
     LOGIN
-  },
-
-  layout: 'login'
+  }
 }
 </script>
 
