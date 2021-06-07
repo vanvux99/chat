@@ -3,14 +3,17 @@
 </template>
 
 <script>
-import LOGIN from "../../components/Login/login";
+import LOGIN from '../../components/Login/login'
+
 export default {
-    components: {
-        LOGIN,
-    },
+
+  components: {
+    LOGIN
+  },
+
+  layout: 'login'
 }
 </script>
 
 <style>
-
 </style>

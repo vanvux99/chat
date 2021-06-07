@@ -1,6 +1,6 @@
 <template>
   <div>
-      <p>gsdfjsldkjfkjfsdknfalksdfjkdncvjkndvjnsdajvn</p>
+      <p>layout login</p>
     <Nuxt />
   </div>
 </template>
