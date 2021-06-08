@@ -1,5 +1,7 @@
 <template>
-  <p>đây là box layout</p>
+  <div>
+    <Nuxt/>
+  </div>
 </template>
 
 <script>
@@ -8,6 +10,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
