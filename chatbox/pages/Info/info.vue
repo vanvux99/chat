@@ -5,10 +5,10 @@
 <script>
 import INFO from '../../components/Infomation/info.vue'
 export default {
-  layout: 'box',
   components: {
     INFO
-  }
+  },
+  layout: 'box'
 }
 </script>
 

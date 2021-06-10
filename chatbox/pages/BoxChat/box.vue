@@ -7,10 +7,10 @@
 <script>
 import BOXCHAT from '../../components/BoxChat/box.vue'
 export default {
-  layout: 'box',
   components: {
     BOXCHAT
-  }
+  },
+  layout: 'box'
 }
 </script>
 

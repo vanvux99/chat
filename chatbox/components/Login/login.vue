@@ -7,14 +7,14 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous"
-      />
+      >
       <!--Fontawesome CDN-->
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous"
-      />
+      >
     </div>
 
     <div class="container">
@@ -23,42 +23,47 @@
           <div class="card-header">
             <h3>CHAT BOX</h3>
             <div class="d-flex justify-content-end social_icon">
-              <span><i class="fab fa-facebook-square"></i></span>
-              <span><i class="fab fa-google-plus-square"></i></span>
-              <span><i class="fab fa-twitter-square"></i></span>
+              <span><i class="fab fa-facebook-square" /></span>
+              <span><i class="fab fa-google-plus-square" /></span>
+              <span><i class="fab fa-twitter-square" /></span>
             </div>
           </div>
           <div class="card-body">
             <form>
               <div class="input-group form-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  <span
+                    class="input-group-text"
+                  ><i
+                    class="fas fa-user"
+                  /></span>
                 </div>
                 <input
                   type="text"
                   class="form-control"
                   placeholder="tài khoản"
-                />
+                >
               </div>
               <div class="input-group form-group">
                 <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  <span class="input-group-text"><i class="fas fa-key" /></span>
                 </div>
                 <input
                   type="password"
                   class="form-control"
                   placeholder="mật khẩu"
-                />
+                >
               </div>
               <div class="row align-items-center remember">
-                <input type="checkbox" />Ghi nhớ tài khoản
+                <input type="checkbox">Ghi nhớ tài khoản
               </div>
               <div class="form-group">
                 <input
                   type="submit"
                   value="Đăng nhập"
                   class="btn float-right login_btn"
-                />
+                  @click="loginAccount"
+                >
               </div>
             </form>
           </div>
@@ -78,14 +83,20 @@
 
 <script>
 export default {
+  methods: {
+    loginAccount () {
+      this.$router.push('/boxchat/box')
+    }
+  }
 }
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Numans");
 
-html, body {
-  background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
+html,
+body {
+  /* background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
